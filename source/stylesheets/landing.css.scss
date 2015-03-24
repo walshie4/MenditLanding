@@ -1,12 +1,8 @@
 @import 'base.css.scss';
 
-div.container {
-    padding-top: 5%;
-    height: 100%;
-    width: 100%;
-}
-
 #intro {
+    z-index: 1;
+    padding-top: 10%;
     @extend .section;
     background-color: rgb(129,172,215);
     height: 60%;
@@ -20,4 +16,11 @@ div.container {
     h3 {
         padding-top: 4%;
     }
+}
+
+#change {
+    @extend .section;
+    background-image: url("/images/power.jpg");
+    background-size: cover;
+    height: 70%;
 }

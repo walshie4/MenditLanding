@@ -54,11 +54,17 @@
     padding: 4%;
 }
 
-html, body {
+html {
     height: 100%;
     width: 100%;
     background-color: rgb(230,230,230);
     color: rgb(20,20,20);
+}
+
+body {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 * {
@@ -68,6 +74,7 @@ html, body {
 }
 
 header {
+    z-index: 20;
     position: fixed;
     background-color: rgb(255,255,255);
     color: rgb(40,40,40);
@@ -112,4 +119,5 @@ a:link, a:visited {
     padding-top: 5%;
     padding-left: 15%;
     padding-right: 15%;
+    overflow: hidden;
 }
