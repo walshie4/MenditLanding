@@ -37,6 +37,11 @@
         %link{:href=>"stylesheets/base.css", :rel=>'stylesheet', :type=>'text/css'}
         %link{:href=>"stylesheets/mobile.css", :rel=>'stylesheet', :type=>'text/css',
               :media=>"only screen and (max-width: 768px), only screen and (max-device-width: 768px)"}
+    %header
+        %a{:href=>"/MenditLanding"}
+            %img#brand{:src=>"//d1015h9unskp4y.cloudfront.net/attachments/2fa2a0b0-01d5-4e22-b9f6-3db2a62a3659/mendit-icon.jpg"}
+        %a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
+            %img#assemblyProj{:src=>"//treasure.assembly.com/assets/flag-36b9a010cd4cc717cc842a5add1a5f65.svg"}
     = yield
 
     %footer
