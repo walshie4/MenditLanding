@@ -1,4 +1,23 @@
+@import 'base.css.scss';
+
 div.container {
+    padding-top: 5%;
     height: 100%;
     width: 100%;
+}
+
+#intro {
+    @extend .section;
+    background-color: rgb(129,172,215);
+    height: 60%;
+    h1 {
+        font-size: 42px;
+    }
+    i {
+        margin-left: 47%;
+        width: 6%;
+    }
+    h3 {
+        padding-top: 4%;
+    }
 }
