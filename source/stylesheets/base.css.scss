@@ -89,8 +89,12 @@ header {
     color: rgb(230,230,230);
 }
 
-.darkBlurBack {
-    background-color: rgba(20,20,20,.6);
+.black {
+    color: rgb(30,30,30);
+}
+
+.blurBack {
+    background-color: rgba(220,220,220,.8);
     @include border-radius(25px);
 }
 
