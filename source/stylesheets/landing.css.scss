@@ -18,9 +18,21 @@
     }
 }
 
+#how {
+    @extend .section;
+    height: 90%;
+    h3 {
+        margin-top: 6%;
+    }
+}
+
 #change {
     @extend .section;
-    background-image: url("/MenditLanding/images/power.jpg");
-    background-size: cover;
     height: 70%;
+    background-image: url("/images/power_blur.jpg");
+    background-position: center center;
+    background-size: cover;
+    h3 {
+        margin-top: 5%;
+    }
 }

@@ -85,6 +85,19 @@ header {
     border-bottom: 1px solid rgba(40,40,40,.3);
 }
 
+.grey {
+    color: rgb(230,230,230);
+}
+
+.darkBlurBack {
+    background-color: rgba(20,20,20,.6);
+    @include border-radius(25px);
+}
+
+.top-padded {
+    padding-top: 5%;
+}
+
 #brand {
     height: 100%;
     margin-left: 4%;
