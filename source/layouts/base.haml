@@ -31,10 +31,14 @@
         %link{:href=>"stylesheets/mobile.css", :rel=>'stylesheet', :type=>'text/css',
               :media=>"only screen and (max-width: 768px), only screen and (max-device-width: 768px)"}
     %header
-        %a{:href=>"/MenditLanding"}
-            %img#brand{:src=>"images/mendit-icon.jpg"}
-        %a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
-            %img#assemblyProj{:src=>"images/assembly.svg"}
+        %ul#breadcrumb
+            %li
+                %a{:href=>"/MenditLanding"}
+                    %img#brand{:src=>"images/icon_transparent.png"}
+            %li
+                %a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
+                    %img#assemblyProj{:src=>"images/assembly.svg"}
+
     = yield
 
 %footer
