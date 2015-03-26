@@ -106,7 +106,7 @@ header {
     background-color: rgba(255,255,255, .6);
     color: rgb(40,40,40);
     width: 100%;
-    height: 8%;
+    height: 57px;
     overflow: hidden;
     border-bottom: 1px solid rgba(40,40,40,.3);
 }
@@ -169,6 +169,10 @@ a:link, a:visited {
     align-text: center;
 }
 
+.hidden {
+    display: none;
+}
+
 $nav: #E0E0E0;
 $navDark: #D6D6D6;
 $navAlt: #79B5DF;
@@ -179,6 +183,7 @@ ul#breadcrumb {
     list-style: none;
     display: inline-block;
     height: 88%;
+    padding-top: 3px;
 
     .icon {
         font-size: 14px;
@@ -257,7 +262,7 @@ ul#breadcrumb {
             }
             &:hover {
                 background-color: $navAlt;
-                width: 125px;
+                width: 100px;
 
                 &:before {
                     border-color:$navAlt;

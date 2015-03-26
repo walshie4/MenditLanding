@@ -33,14 +33,14 @@
     %header
         %ul#breadcrumb
             %li
-                %a{:href=>"MenditLanding"}
+                %a.page-scroll{:href=>'#page-top'}
                     %img#brand{:src=>"images/icon_transparent.png"}
             %li
-                %a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
-                    %img#assemblyProj{:src=>"images/assembly.svg"}
-            %li
-                %a
+                %a.page-scroll{:href=>'#how'}
                     %i#howBtn.fa.fa-2x.fa-question
+            %li
+                %a.page-scroll{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
+                    %img#assemblyProj{:src=>"images/assembly.svg"}
 
     = yield
 
