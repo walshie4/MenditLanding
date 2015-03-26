@@ -22,6 +22,7 @@
     @extend .section;
     min-height: 90%;
     height: fit;
+    padding-bottom: 8%;
     h3 {
         margin-top: 6%;
     }
@@ -31,6 +32,7 @@
     @extend .section;
     min-height: 70%;
     height: fit;
+    background-color: rgb(110,114,147);
     background-image: url("/MenditLanding/images/power_blur.jpg");
     background-position: center center;
     background-size: cover;
