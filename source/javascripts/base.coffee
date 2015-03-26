@@ -9,3 +9,37 @@ $ ->
     return
 
   return
+
+showDescOnHover = (elem, text) ->
+    $(elem).hover (->
+      $(this).find('i').addClass "hidden"
+      $textElem = $(this).find('span')
+      $textElem.removeClass "hidden"
+      $textElem.text(text)
+      return
+    ), ->
+      $(this).find('i').removeClass "hidden"
+      $textElem = $(this).find('span')
+      $textElem.addClass "hidden"
+      $textElem.text("")
+      return
+
+showDescOnHoverImg = (elem, text) ->
+    $(elem).hover (->
+      $(this).find('img').addClass "hidden"
+      $textElem = $(this).find('span')
+      $textElem.removeClass "hidden"
+      $textElem.text(text)
+      return
+    ), ->
+      $(this).find('img').removeClass "hidden"
+      $textElem = $(this).find('span')
+      $textElem.addClass "hidden"
+      $textElem.text("")
+      return
+
+
+showDescOnHover($('#howNav'), "How?")
+showDescOnHover($('#changeNav'), "Help Out")
+showDescOnHoverImg($('#homeNav'), "Home")
+showDescOnHoverImg($('#assemblyNav'), "Assembly")

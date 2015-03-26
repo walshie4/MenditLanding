@@ -33,13 +33,20 @@
     %header
         %ul#breadcrumb
             %li
-                %a.page-scroll{:href=>'#page-top'}
+                %a#homeNav.page-scroll{:href=>'#page-top'}
+                    %span.hidden.navText
                     %img#brand{:src=>"images/icon_transparent.png"}
             %li
-                %a.page-scroll{:href=>'#how'}
-                    %i#howBtn.fa.fa-2x.fa-question
+                %a#howNav.page-scroll{:href=>'#how'}
+                    %span.hidden.navText
+                    %i.navBtn.fa.fa-2x.fa-question
             %li
-                %a.page-scroll{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
+                %a#changeNav.page-scroll{:href=>'#change'}
+                    %span.hidden.navText
+                    %i.navBtn.fa.fa-2x.fa-globe
+            %li
+                %a#assemblyNav.page-scroll{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
+                    %span.hidden.navText
                     %img#assemblyProj{:src=>"images/assembly.svg"}
 
     = yield

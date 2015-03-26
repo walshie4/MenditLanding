@@ -109,6 +109,7 @@ header {
     height: 57px;
     overflow: hidden;
     border-bottom: 1px solid rgba(40,40,40,.3);
+    padding-bottom: 8px;
 }
 
 .grey {
@@ -126,6 +127,14 @@ header {
 
 .top-padded {
     padding-top: 5%;
+}
+
+span.navText {
+    font-size: 18px;
+}
+
+a.page-scroll {
+    margin-top: 5px;
 }
 
 #brand {
@@ -173,6 +182,10 @@ a:link, a:visited {
     display: none;
 }
 
+#howNav {
+    padding-top: 8px;
+}
+
 $nav: #E0E0E0;
 $navDark: #D6D6D6;
 $navAlt: #79B5DF;
@@ -183,7 +196,7 @@ ul#breadcrumb {
     list-style: none;
     display: inline-block;
     height: 88%;
-    padding-top: 3px;
+    padding-top: 2px;
 
     .icon {
         font-size: 14px;
@@ -199,10 +212,10 @@ ul#breadcrumb {
             background: $nav;
             text-decoration: none;
             position: relative;
-            height: 100%;
-            width: 75px;
+            height: 94%;
+            width: 105px;
             line-height: 40px;
-            padding: 0 10px 0 5px;
+            padding: 3px 10px 0 5px;
             text-align: center;
             margin-right: 23px;
             z-index: 22;
@@ -262,7 +275,7 @@ ul#breadcrumb {
             }
             &:hover {
                 background-color: $navAlt;
-                width: 100px;
+                width: 150px;
 
                 &:before {
                     border-color:$navAlt;
@@ -284,7 +297,7 @@ ul#breadcrumb {
                 }
             }
         }
-        #howBtn {
+        .navBtn {
             padding-top: 8px;
         }
     }
