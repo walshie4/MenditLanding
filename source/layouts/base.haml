@@ -33,11 +33,14 @@
     %header
         %ul#breadcrumb
             %li
-                %a{:href=>"/MenditLanding"}
+                %a{:href=>"MenditLanding"}
                     %img#brand{:src=>"images/icon_transparent.png"}
             %li
                 %a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
                     %img#assemblyProj{:src=>"images/assembly.svg"}
+            %li
+                %a
+                    %i#howBtn.fa.fa-2x.fa-question
 
     = yield
 

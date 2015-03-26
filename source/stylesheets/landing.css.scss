@@ -5,7 +5,8 @@
     padding-top: 10%;
     @extend .section;
     background-color: rgb(129,172,215);
-    height: 60%;
+    min-height: 60%;
+    height: fit;
     h1 {
         font-size: 42px;
     }
