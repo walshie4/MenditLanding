@@ -10,6 +10,11 @@ $ ->
 
   return
 
+$('body,html').bind 'scroll mousedown wheel DOMMouseScroll mousewheel keyup', (e) ->
+  if e.which > 0 or e.type == 'mousedown' or e.type == 'mousewheel'
+    $('html,body').stop()
+  return
+
 showDescOnHover = (elem, text) ->
     $(elem).hover (->
       $(this).find('i').addClass "hidden"
