@@ -67,6 +67,30 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
 * {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -139,4 +163,8 @@ a:link, a:visited {
     padding-left: 15%;
     padding-right: 15%;
     overflow: hidden;
+}
+
+.text-center {
+    align-text: center;
 }
