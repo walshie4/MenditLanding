@@ -152,9 +152,9 @@ footer {
 
 a:link, a:visited {
     text-decoration: none;
-    color: rgb(160,160,160);
+    color: rgb(50,50,50);
     &:hover {
-        color: rgb(50,50,50);
+        color: rgb(160,160,160);
     }
 }
 
@@ -259,7 +259,7 @@ ul#breadcrumb {
             }
             &:hover{
                 background-color: $navAlt;
-                width: 100px;
+                width: 125px;
 
                 &:before {
                     border-color:$navAlt;
