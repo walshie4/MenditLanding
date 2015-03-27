@@ -7,7 +7,7 @@ pull:
 update: pull push
 clean:
 	rm -rf build/
-deploy: build
+deploy: push build
 	bundle exec middleman deploy
 build: clean
 	bundle exec middleman build
