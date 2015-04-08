@@ -1,105 +1,87 @@
+@import 'mixins';
+
 #title {
-    padding-top: 10%;
+	padding-top: 10%;
 }
 
-.container {
-    width: 100%;
-    min-height: 40%;
+#intro {
+    min-height: 102%;
 }
 
 #footer {
-    position: absolute;
-    bottom: 0;
-    min-height: 3%;
-    height: auto;
-    background: rgba(140,140,140,.3);
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+	bottom: 0;
+	min-height: 3%;
+	height: auto;
+	background: rgba(140,140,140,.3);
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
-ul#steps {
-    padding: 0;
+#step_container {
+    min-height: 100%;
     margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    height: 250px;
+    margin-bottom: 5%;
+    height: auto;
     width: 100%;
-    li.step {
-        height: 100%;
-        display: inline-block;
-        overflow: hidden;
-        width: 24%;
-        &:first-child {
-            border-left: .5px solid rgba(20,20,20,.4);
-        }
-        border-right: .5px solid rgba(20,20,20,.4);
-        // padding-left: 8%;
-        i {
-            padding-left: 35%;
-        }
-        img {
-            padding-left: 35%;
-            width: 30%;
-            height: 64px;
-        }
-        p {
-            padding-left: 3px;
-            padding-right: 3px;
-        }
-    }
+    padding: 0;
 }
 
-#mc_embed_signup {
-    width: 50%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-top: 1%;
-    padding-bottom: 8%;
-    padding-left: 5%;
-    padding-right: 15%;
-    border-radius: 2%;
-    background-color: rgba(80,80,80,.1);
+#steps {
+	ul {
+		height: inherit;
+	}
+	height: auto;
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	margin-bottom: 0;
+	@media (min-width: 600px) {
+		height: 200px;
+	}
+	@media (min-width: 1050px) {
+		height: 250px;
+	}
 }
 
-#mc-embedded-subscribe-form {
-    text-align: left;
-    input {
-        float: right;
-        width: 60%;
+.step {
+	@include transition(all, 1s);
+	list-style: none;
+	border-left: .5px solid rgb(40,40,40);
+	border-right: .5px solid rgb(40,40,40);
+	width: 100%;
+	background-color: rgba(40,40,40,.02);
+	height: 100%;
+	.fa-diamond:hover {
+		color: rgb(177,28,11);
+	}
+	.fa-music:hover {
+		color: rgb(255,54,146);
+	}
+	i, img {
+		@include transition(all, 1s);
+		padding-top: 5%;
+	}
+    img {
+        width: 76px;
+        height: auto;
     }
-    #mc-embedded-subscribe {
-        border-color: transparent;
-        border-radius: 5%;
-        margin-right: 20%;
-        margin-top: 3%;
-        padding: 6%;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        background-color: $brand;
-        color: rgb(30,30,30);
-        width: 40%;
-        @include transition(all, .8s);
-        &:hover {
-            background-color: $brand-alt;
-            color: rgb(250,250,250);
-        }
-    }
-    .mc-field-group {
-        padding: 2%;
-        align-text: center;
-        input {
-            border-radius: 5px;
-        }
-    }
-}
-
-.indicates-required {
-    text-align: right;
-    font-size: 13px;
-    color: rgb(140,0,0);
-}
-
-.asterisk {
-    color: rgb(140,0,0);
+	.step_contents {
+		width: 100%;
+		height: 100%;
+	}
+	@media (min-width: 600px) {
+		float: left;
+		width: 49%;
+	}
+	@media (min-width: 1050px) {
+		border-right: none;
+		&:last-child {
+			border-right: .5px solid rgb(40,40,40);
+		}
+		width: 24%;
+		i, img {
+			padding-top: 15%;
+		}
+	}
 }
