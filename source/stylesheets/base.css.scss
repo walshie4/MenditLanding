@@ -10,6 +10,22 @@ html, body {
     text-align: center;
 }
 
+.container, .row {
+    min-height: 100%;
+}
+
+a:link, a:visited {
+    @include transition(ease-in-out, all, 1s);
+    color: rgb(20,20,20);
+    &:hover {
+        color: rgb(80,80,80);
+    }
+}
+
+* {
+    outline: none;
+}
+
 .red {
     color: rgb(240,70,70);
 }
