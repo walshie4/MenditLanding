@@ -6,43 +6,38 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 %link{:href=>'/stylesheets/landing.css', :rel=>'stylesheet', :type=>'text/css'}
 .container
 	.row.center
-		%h1#title
-			Mendit
-		%h3
-			A Crowd-Sourced Effort to Fix the Web
-		%i.fa.fa-3x.fa-bug
-		%br/
-.container
-	.row.center
-		%ul#steps
-			%li.step
-				%i.fa.fa-4x.fa-bug
-				%h2.center
-					Find a Bug
-				%p.center
-					You find a bug on your favorite site while browsing.
-			%li.step
-				%img{:src=>"images/icon_transparent.png"}
-				%h2.center
-					Report It
-				%p.center
-					Using the Mendit browser extension you report the issue.
-			%li.step
-				%i.fa.fa-4x.fa-code
-				%h2.center
-					Devs Notified
-				%p.center
-					We ensure that your report is sent to the development team.
-			%li.step
-				%i.fa.fa-4x.fa-user
-				%h2.center
-					Issue Fixed
-				%p.center
-					The development team fixes the issue moving us closer to a
-					bug-free modern web.
+		#intro
+			%h1#title
+				Mendit
+			%h3
+				A Crowd-Sourced Effort to Fix the Web
+			%i.fa.fa-3x.fa-bug
+		#steps
+			%ul
+				%li.step
+					.step_contents
+						%i.fa.fa-bug.fa-5x
+						%h5.center
+							Find a Bug
+				%li.step
+					.step_contents
+						%img{:src=>'/images/icon.png',
+							:alt=>'Report it with the Mendit browser extension.'}
+						%h5.center
+							Report it With Mendit
+				%li.step
+					.step_contents
+						%i.fa.fa-code.fa-5x
+						%h5.center
+							We&apos;ll Forward it to the Developers
+				%li.step
+					.step_contents
+						%i.fa.fa-smile-o.fa-5x
+						%h5.center
+							The Bug is Fixed
 #footer
 	Made with
 	%i.fa.fa-1x.red.fa-heart
 	by the team @
-	%a{:href=>""}
+	%a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
 		Assembly
