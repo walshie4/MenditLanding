@@ -3,16 +3,20 @@ title: Antumbra - A highly customizable ambient monitor backlight.
 desc: Antumbra | Glow is a dynamic ambient backlight that can be customized for any purpose imaginable.
 keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorful, LED, responsive, beautiful, colors
 ---
-%link{:href=>'/MenditLanding/stylesheets/landing.css', :rel=>'stylesheet', :type=>'text/css'}
-.container
-	.row.center
-		#intro
-			%h1#title
-				Mendit
-			%h3
-				A Crowd-Sourced Effort to Fix the Web
-			%i.fa.fa-3x.fa-bug
-		#steps
+%link{:href=>'/stylesheets/landing.css', :rel=>'stylesheet', :type=>'text/css'}
+#intro
+	#cover
+		.container
+			.row.center
+				%h4
+					Mendit uses crowd-sourced bug reports to help
+					%br/
+					create a bug-free web.
+				%a.button.button-primary{:href=>'#signup'}
+					Fix the Web
+#steps
+	.container
+		.row
 			%ul
 				%li.step
 					.step_contents
@@ -21,7 +25,7 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 							Find a Bug
 				%li.step
 					.step_contents
-						%img{:src=>'/MenditLanding/images/icon.png',
+						%img{:src=>'/images/icon.png',
 							:alt=>'Report it with the Mendit browser extension.'}
 						%h5.center
 							Report it With Mendit
