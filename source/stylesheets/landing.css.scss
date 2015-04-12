@@ -97,7 +97,6 @@
 }
 
 .step {
-	@include transition(all, 1s);
 	list-style: none;
 	border-left: .5px solid rgb(40,40,40);
 	border-right: .5px solid rgb(40,40,40);
@@ -111,7 +110,6 @@
 		color: rgb(255,54,146);
 	}
 	i, img {
-		@include transition(all, 1s);
 		padding-top: 5%;
 	}
     img {
@@ -140,9 +138,12 @@
 
 #signup {
 	padding-top: 10vh;
-	height: 50vh;
+	height: auto;
+	min-height: 50vh;
 	padding-bottom: 5vh;
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .teal_btn {
@@ -165,4 +166,22 @@ a#fordevs {
 
 a#forusers {
 	@extend .alt_teal_btn;
+}
+
+#mc_embed_signup {
+	width: 30%;
+	margin-right: 35%;
+	margin-left: 35%;
+	input {
+		width: 100%;
+		&.button {
+			width: 70%;
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+	}
+}
+
+#mc-embedded-subscribe {
+	@extend .teal_btn;
 }
