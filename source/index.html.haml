@@ -12,21 +12,21 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 					Mendit uses crowd-sourced bug reports to help
 					%br/
 					create a bug-free web.
-				%a.button.button-primary{:href=>'#signup'}
+				%a#signup_btn.button.button-primary{:href=>'#signup'}
 					Fix the Web
 #together
 	.container
 		.row
 			#left
-				%h4.upper
+				%h4.upper.purple
 					Together, we can mendit
 				%p
 					Now anyone can easily submit a bug report
 					and sleep easy knowing it will be forwarded
 					along to the correct development team to be fixed.
-				%a.button.button-primary.upper{:href=>'/MenditLanding/'}
+				%a#fordevs.button.button-primary.upper{:href=>'/MenditLanding/'}
 					For Developers
-				%a.button.button-primary.upper{:href=>'/MenditLanding/'}
+				%a#forusers.button.button-primary.upper{:href=>'/MenditLanding/'}
 					For Consumers
 			%img{:src=>'/MenditLanding/images/Mockup.jpg'}
 #steps
@@ -57,6 +57,11 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 							%i.fa.fa-smile-o.fa-5x
 							%h5.center
 								The Bug is Fixed
+#signup
+	.container
+		.row.center
+			%h3.upper.purple
+				Sign Up For More Info
 #footer
 	Made with
 	%i.fa.fa-1x.red.fa-heart
