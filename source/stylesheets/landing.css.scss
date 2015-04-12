@@ -2,7 +2,7 @@
 
 #intro {
     height: 80vh;
-	background-image: url("/images/2.jpg");
+	background-image: url("/MenditLanding/images/2.jpg");
 	background-size: fit fit;
 	background-position: center center;
 	color: rgb(240,240,240);
@@ -57,7 +57,7 @@
 #steps {
 	overflow: hidden;
 	color: rgb(240,240,240);
-	background-image: url("/images/6.jpg");
+	background-image: url("/MenditLanding/images/6.jpg");
 	background-position: center center;
 	background-size: fit fit;
 	#blue_cover {
@@ -102,7 +102,7 @@
 	border-left: .5px solid rgb(40,40,40);
 	border-right: .5px solid rgb(40,40,40);
 	width: 100%;
-	background-color: rgba(40,40,40,.02);
+	background-color: rgba(100,100,100,.2);
 	height: 100%;
 	.fa-diamond:hover {
 		color: rgb(177,28,11);
@@ -136,4 +136,33 @@
 			padding-top: 15%;
 		}
 	}
+}
+
+#signup {
+	padding-top: 10vh;
+	height: 50vh;
+	padding-bottom: 5vh;
+	width: 100%;
+}
+
+.teal_btn {
+	background-color: rgb(30,176,189);
+	border-color: rgb(30,176,189);
+}
+
+.alt_teal_btn {
+	background-color: rgb(22,139,150);
+	border-color: rgb(22,139,150);
+}
+
+a#signup_btn {
+	@extend .teal_btn;
+}
+
+a#fordevs {
+	@extend .teal_btn;
+}
+
+a#forusers {
+	@extend .alt_teal_btn;
 }
