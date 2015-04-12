@@ -14,31 +14,49 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 					create a bug-free web.
 				%a.button.button-primary{:href=>'#signup'}
 					Fix the Web
-#steps
+#together
 	.container
 		.row
-			%ul
-				%li.step
-					.step_contents
-						%i.fa.fa-bug.fa-5x
-						%h5.center
-							Find a Bug
-				%li.step
-					.step_contents
-						%img{:src=>'/images/icon.png',
-							:alt=>'Report it with the Mendit browser extension.'}
-						%h5.center
-							Report it With Mendit
-				%li.step
-					.step_contents
-						%i.fa.fa-code.fa-5x
-						%h5.center
-							We&apos;ll Forward it to the Developers
-				%li.step
-					.step_contents
-						%i.fa.fa-smile-o.fa-5x
-						%h5.center
-							The Bug is Fixed
+			#left
+				%h4.upper
+					Together, we can mendit
+				%p
+					Now anyone can easily submit a bug report
+					and sleep easy knowing it will be forwarded
+					along to the correct development team to be fixed.
+				%a.button.button-primary.upper{:href=>'/'}
+					For Developers
+				%a.button.button-primary.upper{:href=>'/'}
+					For Consumers
+			%img{:src=>'/images/Mockup.jpg'}
+#steps
+	#blue_cover
+		.container
+			.row.center
+				%h4
+					Mendit is Simple.  Very Simple.
+				%ul
+					%li.step
+						.step_contents.center
+							%i.fa.fa-bug.fa-5x
+							%h5.center
+								Find a Bug
+					%li.step
+						.step_contents.center
+							%img{:src=>'/images/icon.png',
+								:alt=>'Report it with the Mendit browser extension.'}
+							%h5.center
+								Report it With Mendit
+					%li.step
+						.step_contents.center
+							%i.fa.fa-code.fa-5x
+							%h5.center
+								We&apos;ll Forward it to the Developers
+					%li.step
+						.step_contents.center
+							%i.fa.fa-smile-o.fa-5x
+							%h5.center
+								The Bug is Fixed
 #footer
 	Made with
 	%i.fa.fa-1x.red.fa-heart
