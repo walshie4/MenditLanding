@@ -72,3 +72,7 @@ header {
         transform: translateY(-22px);
     }
 }
+
+.button {
+    @include transition(all, .6s);
+}
