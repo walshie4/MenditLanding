@@ -67,28 +67,37 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 				Mendit is still in development but will be available soon. Join
 				our mailing list to be one of the first users!
 			#signup_form
-				:plain
-					<!-- Begin MailChimp Signup Form -->
-						<div id="mc_embed_signup" class="row">
-							<form action="//mendit.us10.list-manage.com/subscribe/post?u=74f25fd56585cd1609f0cf391&amp;id=18f8e50595" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div class="indicates-required"><span class="red">*</span> indicates required</div>
-								<label for="mce-EMAIL">Email Address  <span class="red">*</span>
-								</label>
-								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-								<label for="mce-FNAME">First Name </label>
-								<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-								<label for="mce-LNAME">Last Name </label>
-								<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_74f25fd56585cd1609f0cf391_18f8e50595" tabindex="-1" value=""></div>
-							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary"></div>
-							</form>
-						</div>
-						<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-						<!--End mc_embed_signup-->
+				#mc_embed_signup.row
+					%form#mc-embedded-subscribe-form.validate{:action=>"//mendit.us10.list-manage.com/subscribe/post?u=74f25fd56585cd1609f0cf391&amp;id=18f8e5059",
+					:method=>"post", :name=>"mc-embedded-subscribe-form", :target=>"_blank", :novalidate=>"true"}
+						.row
+							.indicates-required
+								%span.red
+									*
+								indicates required
+							%label{:for=>"mce-EMAIL"}
+								Email Address
+								%span.red
+									*
+							%input#mce-EMAIL.required.email{:type=>"email", :value=>"", :name=>"EMAIL"}
+								%label{:for=>"mce-FNAME"}
+									First Name
+								%input#mce-FNAME{:type=>"text",:value=>"",:name=>"FNAME"}
+								%label{:for=>"mce-LNAME"}
+									Last Name
+								%input#mce-LNAME{:type=>"text",:value=>"",:name=>"LNAME"}
+								#mce-responses.clear
+									#mce-error-response.response{:style=>"display:none"}
+									#mce-success-response.response{:style=>"display:none"}
+								%div{:style=>"position: absolute; left: -5000px;"}
+									%input{:type=>"text",:name=>"b_74f25fd56585cd1609f0cf391_18f8e50595",
+										:tabindex=>"-1",:value=>""}
+								.clear
+									%input#mc-embedded-subscribe.button.primary-button{:type=>"submit",
+										:value=>"Subscribe",:name=>"subscribe"}
+								:plain
+									<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+									<!--End mc_embed_signup-->
 #footer
 	Made with
 	%i.fa.fa-1x.red.fa-heart
