@@ -185,3 +185,13 @@ a#forusers {
 #mc-embedded-subscribe {
 	@extend .teal_btn;
 }
+
+#mce-FNAME, #mce-LNAME {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #FFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
