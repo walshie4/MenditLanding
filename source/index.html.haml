@@ -74,30 +74,25 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
 							.indicates-required
 								%span.red
 									*
-								indicates required
-							%label{:for=>"mce-EMAIL"}
-								Email Address
-								%span.red
-									*
-							%input#mce-EMAIL.required.email{:type=>"email", :value=>"", :name=>"EMAIL"}
-								%label{:for=>"mce-FNAME"}
-									First Name
-								%input#mce-FNAME{:type=>"text", :value=>"", :name=>"FNAME"}
-								%label{:for=>"mce-LNAME"}
-									Last Name
-								%input#mce-LNAME{:type=>"text", :value=>"", :name=>"LNAME"}
-								#mce-responses.clear
-									#mce-error-response.response{:style=>"display:none"}
-									#mce-success-response.response{:style=>"display:none"}
-								%div{:style=>"position: absolute; left: -5000px;"}
-									%input{:type=>"text", :name=>"b_74f25fd56585cd1609f0cf391_18f8e50595",
-										:tabindex=>"-1", :value=>""}
-								.clear
-									%input#mc-embedded-subscribe.button.primary-button{:type=>"submit",
-										:value=>"Subscribe", :name=>"subscribe"}
-								:plain
-									<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-									<!--End mc_embed_signup-->
+								Only Email is Required.
+							%input#mce-EMAIL.required.email{:type=>"email", :value=>"", :name=>"EMAIL",
+								:placeholder=>"Email Address..."}
+							%input#mce-FNAME{:type=>"text", :value=>"", :name=>"FNAME",
+								:placeholder=>"First Name..."}
+							%input#mce-LNAME{:type=>"text", :value=>"", :name=>"LNAME",
+								:placeholder=>"Last Name..."}
+							#mce-responses.clear
+								#mce-error-response.response{:style=>"display:none"}
+								#mce-success-response.response{:style=>"display:none"}
+							%div{:style=>"position: absolute; left: -5000px;"}
+								%input{:type=>"text", :name=>"b_74f25fd56585cd1609f0cf391_18f8e50595",
+									:tabindex=>"-1", :value=>""}
+							.clear
+								%input#mc-embedded-subscribe.button.primary-button{:type=>"submit",
+									:value=>"Subscribe", :name=>"subscribe"}
+							:plain
+								<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+								<!--End mc_embed_signup-->
 #footer
 	Made with
 	%i.fa.fa-1x.red.fa-heart
