@@ -112,6 +112,9 @@
 	i, img {
 		padding-top: 5%;
 	}
+    i.fa {
+        padding-bottom: 17%;
+    }
     img {
         width: 76px;
         height: auto;
@@ -149,11 +152,18 @@
 .teal_btn {
 	background-color: rgb(30,176,189);
 	border-color: rgb(30,176,189);
+    color: rgb(230,230,230);
+    &:hover {
+        @extend .alt_teal_btn;
+    }
 }
 
 .alt_teal_btn {
 	background-color: rgb(22,139,150);
 	border-color: rgb(22,139,150);
+    &:hover {
+        @extend .teal_btn;
+    }
 }
 
 a#signup_btn {
@@ -201,6 +211,6 @@ a#forusers {
     }
 }
 
-##meditStepImg {
+#meditStepImg {
     height: 110px;
 }
