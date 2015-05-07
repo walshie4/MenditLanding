@@ -15,4 +15,6 @@ run:
 test: run
 verify: build
 	bundle exec htmlproof ./build/ --check-html
+fdeploy: build
+	bundle exec middleman deploy
 
