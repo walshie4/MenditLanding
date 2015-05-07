@@ -14,6 +14,11 @@
             :async=>'true'}
             %script{:src => "//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js",
             :async=>'true'}
+        %script{:src =>"//code.jquery.com/jquery-1.11.2.min.js"}
+        %script{:src=>"//code.jquery.com/jquery-migrate-1.2.1.min.js"}
+        %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
+            :async=>'true'}
+        %script{:src=>"/javascripts/base.js", :async=>"true"}
         %link{:href=>"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
         :rel=>"stylesheet", :type=>'text/css'}
         %link{:href=>"//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css",
@@ -21,17 +26,17 @@
         %link{:href=>"/MenditLanding/stylesheets/skeleton.css", :rel=>'stylesheet', :type=>'text/css'}
         %link{:href=>"/MenditLanding/stylesheets/base.css", :rel=>'stylesheet', :type=>'text/css'}
     %header
-        %a{:href=>'#page-top'}
+        %a.page-scroll{:href=>'#page-top'}
             %img#brand_header{:src=>'/MenditLanding/images/mendit-logo-300px.png',
                 :alt=>'Mendit'}
-        %a.button{:href=>'#page-top'}
+        %a.button.page-scroll{:href=>'#page-top'}
             Home
-        %a.button{:href=>'#about'}
+        %a.button.page-scroll{:href=>'#about'}
             About
-        %a.button{:href=>'#download'}
+        %a.button.page-scroll{:href=>'#download'}
             Download
-        %a.button{:href=>'#blog'}
+        %a.button.page-scroll{:href=>'#blog'}
             Blog
-        %a.button.blue{:href=>'#signup'}
+        %a.button.blue.page-scroll{:href=>'#signup'}
             Sign Up
     = yield
