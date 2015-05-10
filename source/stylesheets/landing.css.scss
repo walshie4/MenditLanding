@@ -25,13 +25,25 @@
 	#left {
 		margin-left: 10%;
 		margin-top: 20%;
-		width: 40%;
-		float: left;
+        @media(min-width: 600px) {
+            width: 40%;
+            float: left;
+        }
 	}
 	img {
-		padding-top: 5%;
-		width: 30%;
-		float: right;
+        display: none;
+        @media(min-width: 470px) {
+            display: inline;
+            height: 70%;
+            padding-left: 30%;
+        }
+        @media(min-width: 600px) {
+            height: auto;
+            padding-top: 5%;
+            padding-left: 0;
+            float: right;
+            width: 30%;
+        }
 	}
 }
 
@@ -113,7 +125,9 @@
 		padding-top: 5%;
 	}
     i.fa {
-        padding-bottom: 17%;
+        @media(min-width: 1050px) {
+            padding-bottom: 17%;
+        }
     }
     img {
         width: 76px;
@@ -149,6 +163,10 @@
 	margin-right: 10%;
 }
 
+@media(max-width: 600px) {
+    width: 100%;
+}
+
 .teal_btn {
 	background-color: rgb(30,176,189);
 	border-color: rgb(30,176,189);
@@ -180,17 +198,21 @@ a#forusers {
 }
 
 #mc_embed_signup {
-	width: 30%;
-	margin-right: 35%;
-	margin-left: 35%;
-	input {
-		width: 100%;
-		&.button {
-			width: 70%;
-			margin-left: 15%;
-			margin-right: 15%;
-		}
-	}
+    width: 100%;
+    margin: 0;
+    @media(min-width: 600px) {
+        width: 30%;
+        margin-right: 35%;
+        margin-left: 35%;
+        input {
+            width: 100%;
+            &.button {
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    }
 }
 
 #mc-embedded-subscribe {
