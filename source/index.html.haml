@@ -38,7 +38,7 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                     Using the Mendit extension anyone can easily submit a bug report
                     and sleep easy knowing it will be forwarded
                     along to the correct development team to be fixed.
-                %a#fordevs.button.button-primary.upper.page-scroll{:href=>'#signup'}
+                %a#fordevs.button.button-primary.upper.page-scroll{:href=>'#dev_signup'}
                     For Developers
                 %a#forusers.button.button-primary.upper.page-scroll{:href=>'#signup'}
                     For Consumers
@@ -82,7 +82,7 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
             #signup_form
                 #mc_embed_signup.row
                     %form#mc-embedded-subscribe-form.validate{:action=>"//mendit.us10.list-manage.com/subscribe/post?u=74f25fd56585cd1609f0cf391&amp;id=18f8e5059",
-                    :method=>"post", :name=>"mc-embedded-subscribe-form", :target=>"_blank", :novalidate=>"true"}
+                        :method=>"post", :name=>"mc-embedded-subscribe-form", :target=>"_blank", :novalidate=>"true"}
                         .row
                             .indicates-required
                                 %span.red
@@ -103,12 +103,40 @@ keywords: Antumbra, Glow, light, AR, backlighting, experience, immersion, colorf
                             .clear
                                 %input#mc-embedded-subscribe.button.primary-button{:type=>"submit",
                                     :value=>"Subscribe", :name=>"subscribe"}
+                            %script{:src=>'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'}
                             :plain
-                                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                                <!--End mc_embed_signup-->
-#footer
-    Made with
-    %i.fa.fa-1x.red.fa-heart
-    on
-    %a{:href=>"//assembly.com/bug-review-crowd-sourced-debugging"}
-        Assembly
+                                <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+#dev_signup
+    .container
+        .row.center
+            %h3.upper.purple
+                Join the Mendit Developer Community
+            %h5.center
+                Be the first to know when Mendit is available for use on your own projects.
+            #signup_form
+                #mc_embed_signup_scroll.row
+                    %form#mc-embedded-subscribe-form.validate{:action=>"//mendit.us10.list-manage.com/subscribe/post?u=74f25fd56585cd1609f0cf391&amp;id=9e5f57bd35",
+                    :method=>"post", :name=>"mc-embedded-subscribe-form", :target=>"_blank", :novalidate=>"true"}
+                        .row
+                            .indicates-required
+                                %span.red
+                                    *
+                                Only Email is Required.
+                            %input#mce-EMAIL_dev.required.email{:type=>"email", :value=>"", :name=>"EMAIL_dev",
+                                :placeholder=>"Email Address..."}
+                            %input#mce-FNAME_dev{:type=>"text", :value=>"", :name=>"FNAME_dev",
+                                :placeholder=>"First Name..."}
+                            %input#mce-LNAME_dev{:type=>"text", :value=>"", :name=>"LNAME_dev",
+                                :placeholder=>"Last Name..."}
+                            #mce-responses.clear
+                                #mce-error-response.response{:style=>"display:none"}
+                                #mce-success-response.response{:style=>"display:none"}
+                            %div{:style=>"position: absolute; left: -5000px;"}
+                                %input{:type=>"text", :name=>"b_74f25fd56585cd1609f0cf391_9e5f57bd35",
+                                    :tabindex=>"-1", :value=>""}
+                            .clear
+                                %input#mc-embedded-subscribe.button.primary-button{:type=>"submit",
+                                    :value=>"Subscribe", :name=>"subscribe"}
+                            :plain
+                                <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL_dev';ftypes[0]='email';fnames[1]='FNAME_dev';ftypes[1]='text';fnames[2]='LNAME_dev';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                                <div id="mc_embed_signup">
