@@ -1,0 +1,1 @@
+(function(){$(function(){var o;return o=$("html, body"),$("a.page-scroll").click(function(){return o.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove",function(){o.stop()}),o.animate({scrollTop:$($(this).attr("href")).offset().top},1e3,"easeInOutExpo",function(){o.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove")}),!1})})}).call(this);
