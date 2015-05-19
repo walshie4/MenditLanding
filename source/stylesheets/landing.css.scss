@@ -25,19 +25,19 @@
 	#left {
 		margin-left: 10%;
 		margin-top: 20%;
-        @media(min-width: 600px) {
+        @media (min-width: 600px) {
             width: 40%;
             float: left;
         }
 	}
 	img {
         display: none;
-        @media(min-width: 470px) {
+        @media (min-width: 470px) {
             display: inline;
             height: 70%;
             padding-left: 30%;
         }
-        @media(min-width: 600px) {
+        @media (min-width: 600px) {
             height: auto;
             padding-top: 5%;
             padding-left: 0;
@@ -125,7 +125,7 @@
 		padding-top: 5%;
 	}
     i.fa {
-        @media(min-width: 1050px) {
+        @media (min-width: 1050px) {
             padding-bottom: 17%;
         }
     }
@@ -200,7 +200,7 @@ a#forusers {
 #mc_embed_signup {
     width: 100%;
     margin: 0;
-    @media(min-width: 600px) {
+    @media (min-width: 600px) {
         width: 30%;
         margin-right: 35%;
         margin-left: 35%;
